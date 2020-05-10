@@ -1,15 +1,6 @@
-// Basic Bluetooth sketch HC-06_01
-// Connect the Hc-06 module and communicate using the serial monitor
-//
-// The HC-06 defaults to AT mode when first powered on.
-// The default baud rate is 9600
-// The Hc-06 requires all AT commands to be in uppercase. NL+CR should not be added to the command string
- 
 #include <SoftwareSerial.h>
-SoftwareSerial BTserial(0, 1); // RX | TX
-// Connect the HC-06 TX to the Arduino RX on pin 2. 
-// Connect the HC-06 RX to the Arduino TX on pin 3 through a voltage divider.
 
+SoftwareSerial BTserial(0, 1); // Port numbers in your arduino: RX | TX
 
 void setup() 
 {
